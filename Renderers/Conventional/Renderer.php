@@ -568,9 +568,6 @@ class Conventional extends Nette\Object implements IRenderer
 				$cell->addClass('actions');
 
 			} else {
-				if (!array_key_exists($column->getName(), $data)) {
-					throw new \InvalidArgumentException("Non-existing column '" . $column->getName() . "' in datagrid '" . $this->dataGrid->getName() . "'");
-				}
 				$value = $column->formatContent($data[$column->getName()], $data);
 			}
 
