@@ -190,4 +190,9 @@ class ActionColumn extends Column implements \ArrayAccess
 			$this->getComponent('actions')->removeComponent($component);
 		}
 	}
+        
+        public function getRendererId() {
+                return "ActionColumn";
+        }
+
 }
